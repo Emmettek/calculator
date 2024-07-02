@@ -1,6 +1,5 @@
 # iCodethis - Calculator
 This is a solution to the [Calculator challenge on iCodethis](https://icodethis.com/modes/design-to-code/47/submissions)
-This simple web-based calculator is implemented using HTML, CSS, and JavaScript.
 
 ## Links
 - Solution URL: [Github](https://github.com/Emmettek/calculator)
