@@ -1,79 +1,73 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Reddit Mono', monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Reddit Mono", monospace;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100svh;
-    background-color: rgb(213, 221, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  background-color: rgb(213, 221, 225);
 }
 
 .calculator {
-    box-shadow: 1px 1px 5px rgb(128, 128, 128);
+  box-shadow: 1px 1px 5px rgb(128, 128, 128);
 }
 
 .numbers {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #fff;
-    /* gap: 1px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(255, 255, 255);
 }
 
 .result {
-    grid: flex;
-    align-content: flex-end;
-    grid-column: 1/-1;
-    height: 180px;
-    padding-right: 6px;
-    font-size: 30px;
-    color: #fff;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: rgb(121, 144, 157);
-    p {
-        text-align: end;
-    }
+  grid: flex;
+  align-content: flex-end;
+  grid-column: 1/-1;
+  height: 180px;
+  padding-right: 6px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgb(121, 144, 157);
+}
+.result p {
+  text-align: end;
 }
 
 .button {
-    font-size: 20px;
-    padding: 20px;
-    color: rgb(101, 123, 127);
-    border: 0.001px solid rgb(200, 210, 210);
-    background-color: rgb(229, 233, 236);
-    cursor: pointer;
+  font-size: 20px;
+  padding: 20px;
+  color: rgb(101, 123, 127);
+  border: 0.001px solid rgb(200, 210, 210);
+  background-color: rgb(229, 233, 236);
+  cursor: pointer;
 }
-
 .button:focus-visible {
-    outline: 2px solid #000;
-    z-index: 100;
+  outline: 2px solid rgb(0, 0, 0);
+  z-index: 100;
 }
-
 .button:last-child {
-    grid-column: 3/-1;
-    padding: 5px 5px;
-    color: #fff;
-    border: 1px solid rgb(255, 101, 103);
-    background-color: rgb(255, 101, 103);
-    transition: transform 0.2s ease-in-out;
+  grid-column: 3/-1;
+  padding: 5px 5px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 101, 103);
+  background-color: rgb(255, 101, 103);
+  transition: transform 0.2s ease-in-out;
 }
-
 .button:last-child:hover:focus {
-    animation-name: btn;
-    background-color: rgb(213, 60, 63);
-    transform: scale(1.2);
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
+  background-color: rgb(213, 60, 63);
+  transform: scale(1.2);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
-
 .button.enlarged:hover {
-    background-color: rgb(255, 101, 103);
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-    z-index: 101;
-}
+  background-color: rgb(255, 101, 103);
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 101;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+@use 'variables' as v;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Reddit Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+    background-color: v.$primary-white;
+}
+
+.calculator {
+    box-shadow: 1px 1px 5px v.$gray;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: v.$white;
+}
+
+.result {
+    grid: flex;
+    align-content: flex-end;
+    grid-column: 1/-1;
+    height: 180px;
+    padding-right: 6px;
+    font-size: 30px;
+    color: v.$white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: v.$dark-gray;
+
+    p {
+        text-align: end;
+    }
+}
+
+.button {
+    font-size: 20px;
+    padding: 20px;
+    color: v.$strong-dark-gray;
+    border: 0.001px solid v.$second-dark-gray;
+    background-color: v.$dark-white;
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: 2px solid v.$black;
+        z-index: 100;
+    }
+
+    &:last-child {
+        grid-column: 3/-1;
+        padding: 5px 5px;
+        color: v.$white;
+        border: 1px solid v.$light-red;
+        background-color: v.$light-red;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover:focus {
+            background-color: v.$dark-red;
+            transform: scale(1.2);
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+    &.enlarged:hover {
+        background-color: v.$light-red;
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+        z-index: 101;
+    }
+}
