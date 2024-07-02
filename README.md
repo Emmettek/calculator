@@ -1,10 +1,10 @@
-## My process
-Built with
-<li>Semantic HTML5 markup</li>
-<li>BEM Methodology</li>
-<li>CSS custom properties</li>
-<li>SASS</li>
-<li>Visual Studio Code</li>
+# My process
+## Built with
+- Semantic HTML5 markup
+- BEM Methodology
+- CSS custom properties
+- SASS
+- Visual Studio Code
 
-Author
-<li>LinkedIn - @gryczkaleksandra01</li>
+## Author
+- LinkedIn - [@gryczkaleksandra01](https://www.linkedin.com/in/gryczkaleksandra01/)
